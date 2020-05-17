@@ -1,0 +1,22 @@
+[
+    {
+    "id": 1,
+    "name": "beginer's exercise",
+    "difficulty": 1,
+    "bodypart": "legs",
+    "time": 30,
+    "count": null,
+    "PictureURL": "./url",
+    "Explanation": "bkjdbfkjsdjfkdsjfkjdfdlkgjlkdjglkjdjgklfdjgdjbggkjshkfgjk"
+    },
+    {
+    "id": 2,
+    "name": "222",
+    "difficulty": 2,
+    "bodypart": "legs",
+    "time": 30,
+    "count": null,
+    "PictureURL": "./url2",
+    "Explanation": "bkjdbfkjsdjfkdsjfkjdfdlkgjlkdjglkjdjgklfdjgdjbggkjshkfgjk"
+}
+]

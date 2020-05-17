@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  .container{
+    position:relative;
+    text-align: center;
+    margin: 5%;
+    left:30%;
+    display:block;
+    margin-bottom:80px;
+    width:500px;
+    height:360px;
+    background:#fff;
+    border-radius:5px;
+    overflow:hidden;
+    z-index:1;
+  }
+  .signin{
+    padding: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+  .textfield{
+    margin: 0;
+    width: 80%;
+  }
+  .button{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    background-color: #3f8fb5;
+  }

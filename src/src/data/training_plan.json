@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "plan1",
+        "Difficulty": 1,
+        "BodyPart": "kjgksjgk",
+        "PictureURL": "fjslkdjfkljd",
+        "Explanation": "ksjklsjfgfks;gjkfdj",
+        "SessionList": "",
+        "TimeInterval": 30
+    },
+    {
+        "id": 2,
+        "name": "plan2",
+        "Difficulty": 2,
+        "BodyPart": "kjgksjgk",
+        "PictureURL": "fjslkdjfkljd",
+        "Explanation": "ksjklsjfgfks;gjkfdj",
+        "SessionList": "",
+        "TimeInterval": 30
+    },
+    {
+        "id": 3,
+        "name": "plan3",
+        "Difficulty": 3,
+        "BodyPart": "kjgksjgk",
+        "PictureURL": "fjslkdjfkljd",
+        "Explanation": "ksjklsjfgfks;gjkfdj",
+        "SessionList": "",
+        "TimeInterval": 30
+    }
+]

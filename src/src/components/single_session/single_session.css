@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+  .session{
+    position: relative; 
+    text-align: center;
+    width: 30%;
+    margin: 5px;
+    display: inline-grid;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .title{
+    margin:5px;
+  }
+  h2, .title {
+    text-transform: uppercase;
+  }
+  h2, h3, p , .title{
+    font-weight: lighter;
+  }
+  .center{
+    text-align: center;
+  }
+  button{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    background-color: #3f8fb5;
+    border: none;
+    border-radius: 5px;
+  }
