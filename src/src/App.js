@@ -1,45 +1,56 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import Login from "./components/login/login.component";
-import Register from './components/register/register.component';
+import React, { Component, useContext, useState, useMemo} from 'react';
+import { BrowserRouter as Router, Route, Switch, Link, useHistory, Redirect} from "react-router-dom";
+import Login from "./components/login/login.container";
+import Register from './components/login copy/register.container';
 import Header from './components/header/header.component';
 import Report from './components/report/report.component';
 import Profile from './components/profile/profile.component';
-import Training_Plan from './components/training_plan/training_plan.component';
-import Single_Session from './components/single_session/single_session.component';
+import TrainingPlan from './components/workouts/trainingPlan/training_plan.container';
+import SingleSession from './components/workouts/otherStuff/single_session.component';
+import Workout from './components/workouts/workout.container';
+import {workoutContext,userContext} from './Context';
+import _ from 'lodash';
 import './App.css';
 
 function App() {
-  return (
-    <div>
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/report">
-            <Report />
-          </Route>
-          <Route path="/single_session">
-            <Single_Session />
-          </Route>
-          <Route path="/training_plan">
-            <Training_Plan />
-          </Route>
-          <Route path="/">
-            <Report />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
-  );
+    const [user, setUser] = useState(null);
+    const value = useMemo(() => ({ user, setUser }), [user, setUser]);
+    const [activeWorkout, setWorkout] = useState(null);
+    const active = useMemo(() => ({ activeWorkout, setWorkout }), [activeWorkout, setWorkout]);
+    return (
+    <userContext.Provider value={value}>
+        <Router>
+              <Header/>
+              <Switch>
+                  <Route exact path="/">
+                      {user ? (<Report />):(<Login />)}
+                  </Route>
+                  <Route exact path="/report">
+                      {user ? (<Report />):(<Login />)}
+                  </Route>
+                  <Route exact path="/profile">
+                      {user ? (<Profile/>):(<Login />)}
+                  </Route>
+                  <Route exact path="/register">
+                  {user ? (<Report />):(<Register />)}
+                  </Route>
+                  <Route exact path="/login">
+                     {user ? (<Report />):(<Login />)}
+                  </Route>
+                  <workoutContext.Provider value={active}>
+                      <Route exact path="/single_session">
+                          {user ? (activeWorkout?(<Workout/>):(<SingleSession/>)):(<Login />)}
+                      </Route>
+                      <Route exact path="/training_plan">
+                          {user ? (<TrainingPlan />):(<Login />)}
+                      </Route>
+                      {/* <Route exact path="/workout">
+                          {activeWorkout ? (<Workout/>):(<SingleSession/>)}
+                      </Route> */}
+                  </workoutContext.Provider>
+              </Switch>
+        </Router> 
+    </userContext.Provider>
+    )
 }
-
 export default App;

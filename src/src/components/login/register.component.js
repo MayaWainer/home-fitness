@@ -1,16 +1,15 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import './login.css';
-//import login from './login.jpg';
+import './register.css';
 
-const Login = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}) => (
+const Register = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}) => (
   <div className="container_background" >
-    <div className="container_login" >
-      <div className="login_pic">
+    <div className="container_Register" >
+      <div className="Register_pic">
       </div>
-      <div className="login_form" onKeyUp={(e) => e.keyCode === 13 && handleSubmit(e)}>
+      <div className="Register_form" onKeyUp={(e) => e.keyCode === 13 && handleSubmit(e)}>
         <h2 className="signin">
-          Sign in {isLoggedIn}
+          Register {isLoggedIn}
         </h2>
         <input
           defaultValue={email}
@@ -40,8 +39,8 @@ const Login = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}
         Sign In
         </Button>
         <br/>    
-        <a className="test" href="/register" variant="body2">
-        Don't have an account? Sign Up
+        <a className="test" href="/login" variant="body2">
+        Already have an account? Sign in
         </a>
   
       </div>
@@ -49,4 +48,4 @@ const Login = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}
   </div>
 );
 
-export default Login;
+export default Register;

@@ -1,26 +1,34 @@
 [
     {
         "id":1,
-        "mail":"maya@gmail.com",
+        "userID":1,
         "Date":"2222222",
-        "TotalActiveTime":120,
-        "TotalCalorie":200,
-        "Weight":55
+        "numOfExercise": 15,
+        "TotalActiveTime":20,
+        "TotalCalorie":200
     },
     {
         "id":2,
-        "mail":"maya@gmail.com",
+        "userID":2,
         "Date":"2222222",
-        "TotalActiveTime":120,
-        "TotalCalorie":260,
-        "Weight":54.9
+        "numOfExercise": 15,
+        "TotalActiveTime":20,
+        "TotalCalorie":200
     },
     {
         "id":3,
-        "mail":"1@gmail.com",
+        "userID":2,
         "Date":"2222222",
-        "TotalActiveTime":25,
-        "TotalCalorie":206,
-        "Weight":1
+        "numOfExercise": 15,
+        "TotalActiveTime":20,
+        "TotalCalorie":200
+    },
+    {
+        "id":4,
+        "userID":2,
+        "Date":"2222222",
+        "numOfExercise": 15,
+        "TotalActiveTime":20,
+        "TotalCalorie":200
     }
 ]

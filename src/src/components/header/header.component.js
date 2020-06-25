@@ -1,35 +1,66 @@
-import React from 'react';
+import React, { useContext } from 'react';
+// import { userContext } from './Context' '';
+import {userContext} from '../../Context';
 import { Link } from "react-router-dom";
-import './header.css'
+import './header.css';
+import logo from './logo.png';
 
-const Header = () => {
-  return (
+// const ALink = (className, href, value) => {
+//   const onClick= e => {
+//     e.preventDefault();
+//     // redirect to href
+//   }
+//   return <a className="nav_tag" onClick={onClick} href={href}>{value}</a>
+// }
+
+class Header extends React.Component {
+  constructor(){
+    super()
+    this.state = {
+      isLoggedIn:false
+    }
+  }
+  render(){
+    const { user, setUser } =  this.context;
+    return(
       <div>
         {/* nav bar */}
+
         <nav className="nav">
           <ul>
-            <li className="li">
-              <Link to="/">Home/Report</Link>
+          {user ? (
+         
+            <div className="header_container"><li className="li">
+              <Link className="nav_tag" to="/">Home/Report</Link>
             </li>
             <li className="li">
-              <Link to="/profile">profile</Link>
+              <Link className="nav_tag" to="/profile">profile</Link>
             </li>
             <li className="li">
-              <Link to="/single_session">single session</Link>
+              {/* <div className="nav_logo"> */}
+                <img className="nav_logo" 
+                src={logo}
+                 alt="Logo" />
+                {/* </div> */}
             </li>
             <li className="li">
-              <Link to="/training_plan">training_plan</Link>
+              <Link className="nav_tag" to="/single_session">single session</Link>
             </li>
             <li className="li">
-              <Link to="/register">register</Link>
+              <Link className="nav_tag" to="/training_plan">training plan</Link>
             </li>
-            <li className="li">
-              <Link to="/login">login</Link>
-            </li>
+            </div>
+            ) 
+             :(<div></div>)}
           </ul>
         </nav>
+
+
       </div>
-  );
+    )
+  }
 }
+
+Header.contextType = userContext;
 
 export default Header;

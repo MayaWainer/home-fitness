@@ -1,15 +1,8 @@
-*{
-    margin:0;
-    padding:0;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-  }
   .container_background
   {
     margin: 10px;
   }
-  .container_login{
+  .container{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -29,7 +22,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .signin{
+  .Register{
     padding: 30px;
     font-weight: lighter;
     text-transform: uppercase;
@@ -56,23 +49,23 @@
     text-decoration: none;
     font-size: larger;
   }
-  .login_pic{
+  .pic{
     background-image: url("/login.jpg");
     width: 50%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
   }
-  .login_form{
+  .Register_form{
     width: 50%;
     padding: 2.5%;
   }
 
   @media (max-width: 768px){
-    .login_pic{
+    .pic{
       display: none;
     }
-    .login_form{
+    .Register_form{
       width: 100%;
     }
   }

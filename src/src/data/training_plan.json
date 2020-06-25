@@ -1,32 +1,18 @@
 [
     {
         "id": 1,
-        "name": "plan1",
-        "Difficulty": 1,
-        "BodyPart": "kjgksjgk",
-        "PictureURL": "fjslkdjfkljd",
-        "Explanation": "ksjklsjfgfks;gjkfdj",
-        "SessionList": "",
-        "TimeInterval": 30
+        "name": "Plank Workout",
+        "difficulty": 1,
+        "bodyPart": "stomach",
+        "explanation": "Planks are the most popular and effective fat burning exercise. they can be easily performed and activate all your myscels, inculding your core, sholders,glutes, etc. the mixing of static and dynamic planks really helps you burn fat fast. takes only 7 minutes a day to burn calories and get in better shape!",
+        "dayListOfID": [1,2,3]
     },
     {
         "id": 2,
         "name": "plan2",
-        "Difficulty": 2,
-        "BodyPart": "kjgksjgk",
-        "PictureURL": "fjslkdjfkljd",
-        "Explanation": "ksjklsjfgfks;gjkfdj",
-        "SessionList": "",
-        "TimeInterval": 30
-    },
-    {
-        "id": 3,
-        "name": "plan3",
-        "Difficulty": 3,
-        "BodyPart": "kjgksjgk",
-        "PictureURL": "fjslkdjfkljd",
-        "Explanation": "ksjklsjfgfks;gjkfdj",
-        "SessionList": "",
-        "TimeInterval": 30
+        "difficulty": 2,
+        "bodyPart": "kjgksjgk",
+        "explanation": "ksjklsjfgfks;gjkfdj",
+        "dayListOfID": [1,2]
     }
 ]

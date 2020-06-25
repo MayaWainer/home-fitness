@@ -2,7 +2,7 @@ import React from 'react';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import ClassNames from 'classnames';
-import './register.css'
+//import './register.css'
 
 const Register = () => {
   
@@ -83,7 +83,7 @@ const Register = () => {
         </Button>
       </div>
           
-      <a href="/login" variant="body2">
+      <a className="test" href="/login" variant="body2">
       Already have an account? Sign in
       </a>
     </div>

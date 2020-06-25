@@ -1,22 +1,53 @@
-[
+[  
     {
     "id": 1,
-    "name": "beginer's exercise",
-    "difficulty": 1,
-    "bodypart": "legs",
-    "time": 30,
-    "count": null,
-    "PictureURL": "./url",
-    "Explanation": "bkjdbfkjsdjfkdsjfkjdfdlkgjlkdjglkjdjgklfdjgdjbggkjshkfgjk"
+    "name": "Plank",
+    "difficulty": 2,
+    "bodypart": "stomach",
+    "pictureURL": "./url",
+    "explanation": " 1. Plant hands directly under shoulders (slightly wider than shoulder width) like you’re about to do a push-up. 2. Ground toes into the floor and squeeze glutes to stabilize your body. Your legs should be working, too — be careful not to lock or hyperextend your knees. 3. Neutralize your neck and spine by looking at a spot on the floor about a foot beyond your hands. Your head should be in line with your back. 4. Hold the position for 20 seconds. As you get more comfortable with the move, hold your plank for as long as possible without compromising your form or breath."
     },
     {
     "id": 2,
-    "name": "222",
-    "difficulty": 2,
-    "bodypart": "legs",
-    "time": 30,
-    "count": null,
-    "PictureURL": "./url2",
-    "Explanation": "bkjdbfkjsdjfkdsjfkjdfdlkgjlkdjglkjdjgklfdjgdjbggkjshkfgjk"
-}
+    "name": "Knee Plank",
+    "difficulty": 1,
+    "bodypart": "stomach",
+    "pictureURL": "./url2",
+    "explanation": ""
+    },{
+    "id":3,
+    "name": "Straight Arm Knee Plank",
+    "difficulty": 1,
+    "bodypart": "stomach",
+    "pictureURL": "",
+    "explanation": ""
+    },{
+    "id": 4,
+    "name": "Kneeling Side Plank Right",
+    "difficulty": 1,
+    "bodypart": "stomach",
+    "pictureURL": "",
+    "explanation": ""
+    },{
+    "id": 5,
+    "name": "Kneeling Side Plank Left",
+    "difficulty": 1,
+    "bodypart": "stomach",
+    "pictureURL": "",
+    "explanation": ""
+    },{
+    "id":6,
+    "name": "Kneeling Side Plank Left",
+    "difficulty": 1,
+    "bodypart": "stomach",
+    "pictureURL": "",
+    "explanation": ""
+    },{
+    "id": 7,
+    "name": "get ready",
+    "difficulty": 0,
+    "bodypart": "break",
+    "pictureURL": "",
+    "explanation": ""
+    }
 ]

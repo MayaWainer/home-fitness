@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "3 min Butt Workout",
+        "difficulty": 1,
+        "bodyPart": "butt",
+        "minTime" : 3,
+        "workouts": 6,
+        "pictureURL": "fjslkdjfkljd",
+        "explanation": "Only 3 min instant workout! score a nice looking butt despite your crazy-busy schedule, just using your fragmentary time!",
+        "WorkoutList": [
+                            {
+                            "exerciseID":1,
+                            "name":"Plank",
+                            "time":20,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":2,
+                            "name":"Knee Plank",
+                            "time":20,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":3,
+                            "name":"Straight Arm Knee Plank",
+                            "time":10,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":4,
+                            "name":"Kneeling Side Plank Left",
+                            "time":10,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":5,
+                            "name":"Kneeling Side Plank Right",
+                            "time":10,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":6,
+                            "name":"Kneeling Side Plank Right",
+                            "time":10,
+                            "rep":null
+                            }
+                        ]
+    },
+    {
+        "id": 2,
+        "name": "session2",
+        "difficulty": 1,
+        "bodyPart": "butt",
+        "minTime" : 3,
+        "workouts": 6,
+        "pictureURL": "fjslkdjfkljd",
+        "explanation": "Only 3 min instant workout! score a nice looking butt despite your crazy-busy schedule, just using your fragmentary time!",
+        "WorkoutList": [
+                            {
+                            "exerciseID":1,
+                            "name":"Plank",
+                            "time":20,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":2,
+                            "name":"Knee Plank",
+                            "time":20,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":3,
+                            "name":"Straight Arm Knee Plank",
+                            "time":20,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":4,
+                            "name":"Kneeling Side Plank Left",
+                            "time":10,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":5,
+                            "name":"Kneeling Side Plank Right",
+                            "time":10,
+                            "rep":null
+                            },
+                            {
+                            "exerciseID":6,
+                            "name":"Kneeling Side Plank Right",
+                            "time":10,
+                            "rep":null  
+                            }
+                        ]
+    }
+]

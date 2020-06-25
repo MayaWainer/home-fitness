@@ -1,0 +1,141 @@
+/* * height 100%
+body 
+    
+    background-image: linear-gradient(#72b9d6 25%, #1fc8db 75%, #9fb8adb5 );
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /
+    height: 100%;
+    background-size: cover;
+    background-color: #1fc8db;
+    /
+    opacity: 0.95; */
+  .title{
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+  .choice_container{
+    position: relative; 
+    text-align: center;
+    width: 49%;
+    min-height: 350px;
+    margin: 5px;
+    display: inline-grid;
+    padding: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg,
+                                rgb(212, 226, 233),
+                                rgba(255,255,255,.5)), 
+                                url(https://wallup.net/wp-content/uploads/2016/05/13/353870-women-fitness_model-model-muscles-monochrome-748x408.jpg);
+    box-shadow: 2px 2px 3px 1px #13225f40;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .workout_container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 90%;
+    margin-left: -45%;
+    margin-top: -275px;
+    min-height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .congrats_gif{
+    width: 100%;
+    min-height: 200px;
+    background-image: url(/congrats.gif);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .finished_summery{
+    width: 95%;
+    margin: 20px;
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 15px;
+    background: #43d4b93d;
+    color: black;
+    border-radius: 5px;
+  }
+
+  .finished_button{
+    width: 95%;
+    margin: 20px;
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    padding: 15px;
+    background: #123766b8;
+    color: white;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .choice_button ,.day_choice_button ,.start_button{
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    background-color: #3f8fb5;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+  }
+  .day_choice_button{
+      width: 20%;
+      background-color: #3f8fb58f;
+      border-radius: 5px;
+  }
+  
+  .day_choice_button:hover{
+    background-color: #3f8fb5cc;
+  }
+
+  .start_button{
+    margin: 5px;
+    padding: 15px 50px;
+  }
+
+  .exerciseList, .dayList{
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .dayList{
+    overflow: auto;
+    white-space: nowrap;
+    height: 100px;
+  }
+
+  .exerciseList_items{
+    width: 50%;
+  }
+
+  @media (max-width: 768px){
+    /* .login_pic{
+      display: none;
+    } */
+    .choice_container{
+      width: 100%;
+    }
+  }
