@@ -4,49 +4,54 @@
     "name": "Plank",
     "difficulty": 2,
     "bodypart": "stomach",
-    "pictureURL": "./url",
-    "explanation": " 1. Plant hands directly under shoulders (slightly wider than shoulder width) like you’re about to do a push-up. 2. Ground toes into the floor and squeeze glutes to stabilize your body. Your legs should be working, too — be careful not to lock or hyperextend your knees. 3. Neutralize your neck and spine by looking at a spot on the floor about a foot beyond your hands. Your head should be in line with your back. 4. Hold the position for 20 seconds. As you get more comfortable with the move, hold your plank for as long as possible without compromising your form or breath."
+    "pictureURL": "/login.jpg",
+    "explanation": "Start in a high plank (aka push-up) position. Bend your elbows and rest your weight on your forearms instead of your hands. Your body should form a straight line from your shoulders to your ankles. Brace your core as if you were about to be punched in the stomach. (Don't forget to breathe.)"    
     },
     {
     "id": 2,
     "name": "Knee Plank",
     "difficulty": 1,
     "bodypart": "stomach",
-    "pictureURL": "./url2",
-    "explanation": ""
-    },{
+    "pictureURL": "/login.jpg",
+    "explanation": "Lay face down on the ground with extended legs. Point your toes while you place your hands beneath your shoulders. Push yourself up into the plank position. Maintaining a tight core and flat back, bring your left knee to your right elbow."
+    },
+    {
     "id":3,
     "name": "Straight Arm Knee Plank",
     "difficulty": 1,
     "bodypart": "stomach",
     "pictureURL": "",
-    "explanation": ""
-    },{
+    "explanation": "Get into plank position by supporting your body weight on your hands and toes. Hands should be placed directly under your shoulders.  Push yourself up into the plank position. Maintaining a tight core and flat back, bring your left knee to your right elbow."
+    },
+    {
     "id": 4,
     "name": "Kneeling Side Plank Right",
     "difficulty": 1,
     "bodypart": "stomach",
     "pictureURL": "",
-    "explanation": ""
-    },{
+    "explanation": "Lie on your side supporting yourself on your forearm and your knees, rather than your feet. Engage your core and hold a straight line from your knees to your head – don't let your hips sag"
+    },
+    {
     "id": 5,
     "name": "Kneeling Side Plank Left",
     "difficulty": 1,
     "bodypart": "stomach",
-    "pictureURL": "",
-    "explanation": ""
-    },{
+    "pictureURL": "/login.jpg",
+    "explanation": "Lie on your side supporting yourself on your forearm and your knees, rather than your feet. Engage your core and hold a straight line from your knees to your head – don't let your hips sag"
+    },
+    {
     "id":6,
     "name": "Kneeling Side Plank Left",
     "difficulty": 1,
     "bodypart": "stomach",
-    "pictureURL": "",
+    "pictureURL": "/login.jpg",
     "explanation": ""
-    },{
+    },
+    {
     "id": 7,
     "name": "get ready",
     "difficulty": 0,
-    "bodypart": "break",
+    "bodypart": "",
     "pictureURL": "",
     "explanation": ""
     }

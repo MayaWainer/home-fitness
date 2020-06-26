@@ -5,8 +5,9 @@
         "planID": 1,
         "day": 1,
         "difficulty": 1,
-        "minTime" : 3,
-        "workouts": 6,
+        "minTime" : 1,
+        "workouts": 3,
+        "calorie": 200,
         "WorkoutList": [
                             {
                             "exerciseID":1,
@@ -24,25 +25,7 @@
                             "exerciseID":3,
                             "name":"Straight Arm Knee Plank",
                             "time":20,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":4,
-                            "name":"Kneeling Side Plank Left",
-                            "time":10,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":5,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":6,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":0   
+                            "rep":0 
                             }
                         ]
     },
@@ -53,64 +36,36 @@
         "day": 2,
         "difficulty": 1,
         "minTime" : 3,
-        "workouts": 6,
+        "workouts": 3,
+        "calorie": 250,
         "WorkoutList": [
                             {
                             "exerciseID":1,
                             "name":"Plank",
-                            "time":30,
+                            "time":40,
                             "rep":0
                             },
                             {
                             "exerciseID":2,
                             "name":"Knee Plank",
-                            "time":20,
+                            "time":40,
                             "rep":0
-                            },
-                            {
-                            "exerciseID":3,
-                            "name":"Straight Arm Knee Plank",
-                            "time":30,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":4,
-                            "name":"Kneeling Side Plank Left",
-                            "time":10,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":5,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":6,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":0   
                             }
                         ]
     },{
-        "id": 1,
+        "id": 3,
         "name": "Plank Workout - day 3",
         "planID": 1,
         "day": 3,
         "difficulty": 1,
         "minTime" : 3,
-        "workouts": 6,
+        "workouts": 4,
+        "calorie": 200,
         "WorkoutList": [
                             {
                             "exerciseID":1,
                             "name":"Plank",
                             "time":30,
-                            "rep":0
-                            },
-                            {
-                            "exerciseID":2,
-                            "name":"Knee Plank",
-                            "time":20,
                             "rep":0
                             },
                             {
@@ -130,13 +85,7 @@
                             "name":"Kneeling Side Plank Right",
                             "time":16,
                             "rep":0
-                             },
-                            {
-                            "exerciseID":6,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":0   
-                            }
+                             }
                         ]
     }
 ]

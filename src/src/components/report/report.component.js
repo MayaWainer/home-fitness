@@ -1,6 +1,10 @@
 import React, { useContext } from 'react';
 import {userContext} from '../../Context';
+
 import Total from './total.component';
+import Graph from './weight_graph.component';
+import BMI from './BMI.component';
+
 import activityReport from '../../data/report.json';
 import './report.css';
 
@@ -19,7 +23,8 @@ class Report extends React.Component {
     })
     return (<div>
       <Total exercise = {totalExercizes} calorie = {totalCalorie} time = {totalSEC} />
-      <p>more in the future</p>
+      <Graph />
+      <BMI/>
     </div>)
   }
 }

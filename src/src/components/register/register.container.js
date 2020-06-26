@@ -10,13 +10,12 @@ class Register extends React.Component {
     super(props);
     this.state = {
       username:"",
-      usernamePattern: new RegExp('/[A-z0-9]/'),
+      Pattern: new RegExp(/^[A-z0-9]*$/),
       email: "",
-      // emailPattern: new RegExp('/\S+@\S+\.\S+/'),
-      emailPattern: new RegExp('/[A-z0-9]+@+[A-z0-9]+.+[A-z]/'),
+      emailPattern: new RegExp(/^[A-z0-9]+@[A-z0-9]+\.[A-z]*$/),
       password: "",
       password2:"",
-      passwordPattern: "",
+      maxPassword: 6,
       error: ""
     }
   }
@@ -33,21 +32,19 @@ class Register extends React.Component {
     if(this.state.username === "")//checks if email was entered
     {
       this.setState({error: "name must be filled"});
-      console.log("empty");
-    }else{
-      if(this.state.usernamePattern.test(this.state.username)){//checks if email is in correct format
-        this.setState({error: "Username must have alphabet characters only"});
-        console.log("invalid");
-      }
-      else{
-        this.setState({error: ""});
-        console.log("pass");
+    }
+    else if(this.state.Pattern.test(this.state.username))//checks if email is not in correct format
+      {  
+      this.setState({error: ""});
         return true;
       }
+      else
+      {
+        this.setState({error: "Username must have alphabet characters only"});
+      }
+      return false;
     }
-    console.log("no");
-    return false;
-  }
+
 
   //Function for validating the mail and writing an error messege if invalid
   checkEmail =() => {
@@ -55,10 +52,8 @@ class Register extends React.Component {
     {
       this.setState({error: "email must be filled out"});
     }else{ 
-      if(this.state.emailPattern.test(this.state.email))
-      // if(emailPattern.test(this.state.email))//checks if email is in correct format
+      if(!this.state.emailPattern.test(this.state.email)) //checks if email is not in correct format
       {
-        console.log(this.state.e.test(this.state.email));
         this.setState({error: "please enter a valid email"});
       }else{//checks if email is alredy registerd
         const user = users.find(obj => obj.mail === this.state.email);
@@ -81,43 +76,49 @@ class Register extends React.Component {
       this.setState({error: "please choose a password"});
     }
     else{
-      // if((this.state.password2 === "")&&())
       //checks if password is in correct lenght
-      //checks if password contains only letters and numbers
-      //checks if passwords match
-      if(1===1){
-        this.setState({error: "email is already registered"});
+      if(this.state.Pattern.test(this.state.password)) //checks if password contains only letters and numbers
+      {
+        if(this.state.password.length <= this.state.maxPassword ) //checks if password is in currect length
+        {
+          if(this.state.password === this.state.password2) // checks if passwords match
+          {
+            this.setState({error: ""});
+            return true;
+          }
+          else{
+            this.setState({error: "passwords do not match"});
+          }
+        }
+        else{
+          this.setState({error: "passwords can only have 6 charcters"});
+        }
       }
       else{
-        this.setState({error: ""});
-        return true;
+        this.setState({error: "password  must have alphabet characters only"});
       }
     }
     return false;
   }
 
   handleSubmit = () => {
-      // const user = users.find(obj => obj.mail === this.state.email);
-      // if(user){
-          //  if(user.password===this.state.password)
-          //  {
-          //    this.context.setUser(user);
-          //  }else{
-          //    this.setState({error: "invalid password"});
-          //  }
-      // }
-      // else{
-      //   // this.setState({error: "User not registred"});
-      // }
       if ((this.checkName())&&(this.checkEmail())&&(this.checkPassword()))
       {
-        console.log("pass");
-      }
-      if (this.state.error === "")
-      {
-        // const part = this.state.part +1;
-        // this.setState({ part: this.state.part +1 });
-        // console.log(this.context.state.part);
+        const user = {
+            username : this.state.username,
+            mail: this.state.email,
+            password: this.state.password,
+            age: null,
+            height: null,
+            weight: null,
+            breakLenght: 30,
+            lastActivity: 0,
+            activePlan: 0,
+            activePlanday: 0,
+            isHealthy: true,
+            isAdmin: false
+        };
+        this.context.setUser(user); // create and update new user to context
       }
   }
 
@@ -137,9 +138,6 @@ class Register extends React.Component {
   }
 }
 
-// Login.propTypes = {
-//   getUserInfo: propTypes.func.isRequired
-// }
 Register.contextType = userContext;
 
 

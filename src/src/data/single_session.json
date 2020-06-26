@@ -5,93 +5,65 @@
         "difficulty": 1,
         "bodyPart": "butt",
         "minTime" : 3,
-        "workouts": 6,
-        "pictureURL": "fjslkdjfkljd",
+        "workouts": 3,
+        "calorie": 200,
+        "pictureURL": "/Plank.",
         "explanation": "Only 3 min instant workout! score a nice looking butt despite your crazy-busy schedule, just using your fragmentary time!",
         "WorkoutList": [
                             {
                             "exerciseID":1,
-                            "name":"Plank",
-                            "time":20,
+                            "name":"Plank.jpg",
+                            "time":60,
                             "rep":null
                             },
                             {
                             "exerciseID":2,
                             "name":"Knee Plank",
-                            "time":20,
+                            "time":60,
                             "rep":null
                             },
                             {
                             "exerciseID":3,
                             "name":"Straight Arm Knee Plank",
-                            "time":10,
-                            "rep":null
-                            },
-                            {
-                            "exerciseID":4,
-                            "name":"Kneeling Side Plank Left",
-                            "time":10,
-                            "rep":null
-                            },
-                            {
-                            "exerciseID":5,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":null
-                            },
-                            {
-                            "exerciseID":6,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
+                            "time":60,
                             "rep":null
                             }
                         ]
     },
     {
         "id": 2,
-        "name": "session2",
+        "name": "planks",
         "difficulty": 1,
         "bodyPart": "butt",
-        "minTime" : 3,
-        "workouts": 6,
-        "pictureURL": "fjslkdjfkljd",
+        "minTime" : 2.5,
+        "workouts": 4,
+        "calorie": 230,
+        "pictureURL": "/stomach1.jpg",
         "explanation": "Only 3 min instant workout! score a nice looking butt despite your crazy-busy schedule, just using your fragmentary time!",
         "WorkoutList": [
                             {
                             "exerciseID":1,
                             "name":"Plank",
-                            "time":20,
+                            "time":50,
                             "rep":null
                             },
                             {
                             "exerciseID":2,
                             "name":"Knee Plank",
-                            "time":20,
-                            "rep":null
-                            },
-                            {
-                            "exerciseID":3,
-                            "name":"Straight Arm Knee Plank",
-                            "time":20,
+                            "time":60,
                             "rep":null
                             },
                             {
                             "exerciseID":4,
                             "name":"Kneeling Side Plank Left",
-                            "time":10,
+                            "time":20,
                             "rep":null
                             },
                             {
                             "exerciseID":5,
                             "name":"Kneeling Side Plank Right",
-                            "time":10,
+                            "time":20,
                             "rep":null
-                            },
-                            {
-                            "exerciseID":6,
-                            "name":"Kneeling Side Plank Right",
-                            "time":10,
-                            "rep":null  
                             }
                         ]
     }

@@ -1,14 +1,21 @@
 import React, { useState,useContext } from 'react';
 import {workoutContext} from '../../Context';
-import ActivityTime from './workout/timer.component'
 
-const Workout = ({obj , onComplete}) => {
-  console.log(obj.name);
+import ActivityTime from './Timer/timer.component';
+import exercises from '../../data/exercises.json';
+
+const Workout = ({obj, onComplete}) => {
+const exercise = exercises.find(exercise => exercise.id === obj.exerciseID);
   return (
-    <div>
-      <h1>{obj.name}</h1>
-      <ActivityTime onComplete={onComplete} duration ={obj.time}/>
-      {/* {obj.time? (console.log("11")):(console.log("1"))} */}
+    <div className="workout_container">
+      <div className="exercise_pic"></div>
+      <div className="exercise">
+        <h1 className="exercise_title">{obj.name}</h1>
+        <div className="exercise_explanation">
+          {exercise.explanation}
+        </div>
+        <div className="timer"><ActivityTime onComplete={onComplete} duration ={obj.time}/></div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,53 @@
-.title{
+.profile_container{
     text-align: center;
-    font-weight: lighter;
+    width: 90%;
+    margin: 20px 5%;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(212, 226, 233), rgba(255,255,255,.5)), url(/profile.png) no-repeat;
+    box-shadow: 2px 2px 3px 1px #13225f40;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+.edit_input{
+  width: 70%;
+  border: none;
+  background-color: #ffffffa6;
+  border-radius: 3px;
+  min-height: 30px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+.edit_title{
+  width: 30%;
+  text-align: left;
+}
+.editItem{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 5%;
+  width: 90%;
+  justify-content: space-between;
+}
+.title, .editItem{
+    text-align: center;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 10px;
   }
+.logOut{
+    color: #fff;
+    background-color: #0d1b2c;
+    line-height: 1.75;
+    border-radius: 4px;
+    border: none;
+    width: 90%;
+    margin: 20px;
+    text-decoration: none;
+    font-size: larger;
+    cursor: pointer;
+    height: 50px;
+}
+.logOut:hover{
+  color: #67afdf;
+}

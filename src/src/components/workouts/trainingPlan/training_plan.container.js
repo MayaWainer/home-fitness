@@ -1,9 +1,9 @@
 import React from 'react';
 import {workoutContext} from '../../../Context';
-import ChoiceInfo from './choice_info.component.js';
+import ChoiceInfo from '../choice_info/choice_info.component.js';
 
-import DayList from '../otherStuff/day_list.component.js';
-import ExerciseList from '../otherStuff/exercise_list.component.js';
+import DayList from '../choice_info/day_list.component.js';
+import ExerciseList from '../choice_info/exercise_list.component.js';
 
 import planDays from '../../../data/plan_days.json';
 import plan from '../../../data/training_plan.json';

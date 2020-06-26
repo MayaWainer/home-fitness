@@ -1,7 +1,7 @@
 import React, { Component, useContext, useState, useMemo} from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, useHistory, Redirect} from "react-router-dom";
 import Login from "./components/login/login.container";
-import Register from './components/login copy/register.container';
+import Register from './components/register/register.container';
 import Header from './components/header/header.component';
 import Report from './components/report/report.component';
 import Profile from './components/profile/profile.component';
@@ -39,14 +39,14 @@ function App() {
                   </Route>
                   <workoutContext.Provider value={active}>
                       <Route exact path="/single_session">
-                          {user ? (activeWorkout?(<Workout/>):(<SingleSession/>)):(<Login />)}
+                          {user ? (<SingleSession/>):(<Login />)}
                       </Route>
                       <Route exact path="/training_plan">
                           {user ? (<TrainingPlan />):(<Login />)}
                       </Route>
-                      {/* <Route exact path="/workout">
+                      <Route exact path="/workout">
                           {activeWorkout ? (<Workout/>):(<SingleSession/>)}
-                      </Route> */}
+                      </Route>
                   </workoutContext.Provider>
               </Switch>
         </Router> 

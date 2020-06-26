@@ -45,14 +45,21 @@
     margin-bottom: 10px;
   }
   .button{
-    width: 100%;
-    border-radius: 25px;
-    margin-top: 10px;
-    background-color: #3f8fb5;
+    color: #fff;
+    background-color: #0d1b2c;
+    line-height: 1.75;
+    border-radius: 4px;
+    border: none;
+    width: 90%;
+    margin: 5px;
+    text-decoration: none;
+    font-size: larger;
+    cursor: pointer;
+    height: 40px;
   }
   .test{
     background: none;
-    color: blue;
+    color:  #0d1b2c;
     text-decoration: none;
     font-size: larger;
   }

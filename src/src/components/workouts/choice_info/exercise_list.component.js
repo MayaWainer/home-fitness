@@ -8,7 +8,7 @@ const ExerciseList = ({exerciseList , onStartWorkOut}) => (
             <div className="exerciseList_items">{exercise.name}</div>
             {exercise.time? (<div className="exerciseList_items">{exercise.time} sec</div>):(<div className="exerciseList_items">X {exercise.rep}</div>)}
            </div>)}
-           <Link to="/workout" className="start_button" onClick={onStartWorkOut}>start</Link>
+           <br/><Link to="/workout" className="start_button" onClick={onStartWorkOut}>start</Link>
     </div>
   )
 

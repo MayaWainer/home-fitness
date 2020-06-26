@@ -30,7 +30,7 @@ const Login = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}
           className="textfield"
         />
         <br/>
-        <Button
+        <button
           type="submit"
           variant="contained"
           color="primary"
@@ -38,7 +38,7 @@ const Login = ({isLoggedIn=false, email="", password="", onChange, handleSubmit}
           onClick={handleSubmit}
         >
         Sign In
-        </Button>
+        </button>
         <br/>    
         <a className="test" href="/register" variant="body2">
         Don't have an account? Sign Up

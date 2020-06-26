@@ -1,7 +1,7 @@
 import React, { Children } from 'react';
 import propTypes from 'prop-types';
-import DayList from './day_list.component.js';
-import ExerciseList from './exercise_list.component.js';
+import DayList from '../choice_info/day_list.component.js';
+import ExerciseList from '../choice_info/exercise_list.component.js';
 import '../workout.css'
 
 const ChoiceInfo = ({ item, exerciseList, dayList ,showExerciseList=false, showDayList=null, onChoiceClick,onDayClick, onStartWorkOut}) => (
@@ -11,9 +11,9 @@ const ChoiceInfo = ({ item, exerciseList, dayList ,showExerciseList=false, showD
                   <div>hello world</div>
       </ChoiceInfo2> */}
     <div className="choice">
-      <h1 className="choice_title">{item.name}</h1>
+      <h1 >{item.name}</h1>
       <div className="difficulty"></div>
-      <p>difficulty:{item.difficulty} - bodyPart:{item.bodyPart}</p>
+      <p className="choice_title">difficulty: {item.difficulty}    bodyPart: {item.bodyPart}</p>
       <p>{item.explanation}</p>
       <button 
           type="submit"

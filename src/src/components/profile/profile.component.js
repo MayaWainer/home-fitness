@@ -1,5 +1,6 @@
 import React, { useState,useContext } from 'react';
 import {userContext} from '../../Context';
+import './profile.css';
 
 class Profile extends React.Component {
   
@@ -20,23 +21,58 @@ class Profile extends React.Component {
 
   render(){
     return (
-      <div>
-        <h1 className="title">Edit Profile</h1>
-        <br/>
-        <p>hi {this.context.user.username} 
-        weight {this.context.user.weight} 
-        height {this.context.user.height} 
-        age {this.context.user.age} 
-        lenth of break {this.context.user.breakLenght} sec
-        </p>
-        <button 
-          type="submit"
-          variant="contained"
-          color="primary"
-          className="button"
-          onClick={this.handleLogOut}>
-          logout
-          </button>
+      <div className="profile_container">
+        <h1 className="title">{this.context.user.username}'s profile</h1>
+        
+        <div className="editItem">
+          <div className="edit_title"> weight (kg) </div>
+          <input type="number"
+                 className="edit_input"
+                 placeholder={this.context.user.weight} 
+                 min="20" 
+                 max="500"
+                 step="0.1">
+          </input>
+        </div>
+
+        <div className="editItem">
+          <div className="edit_title"> height (cm) </div>
+          <input type="number"
+                 className="edit_input"
+                 placeholder={this.context.user.height} 
+                 min="20" 
+                 max="200"
+                 step="0.1">
+          </input>
+        </div>
+
+        <div className="editItem">
+          <div className="edit_title"> age </div>
+          <input type="number"
+                 className="edit_input"
+                 placeholder={this.context.user.age} 
+                 min="10" 
+                 max="100"
+                 step="1">
+          </input>
+        </div>
+
+        <div className="editItem">
+          <div className="edit_title"> length of break (sec) </div>
+          <input type="number"
+                 className="edit_input"
+                 placeholder={this.context.user.breakLenght} 
+                 min="10" 
+                 max="200"
+                 step="1">
+          </input>
+        </div>
+
+        <button type="submit"
+                className="logOut"
+                onClick={this.handleLogOut}>
+                logout
+        </button>
       </div>
     )
   }
